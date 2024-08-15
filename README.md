@@ -10,26 +10,23 @@ style it with [CSS](resume.css), output to [HTML](resume.html) and
 ## Prerequisites
 
  - Python ≥ 3.6
- - [python-markdown](https://python-markdown.github.io/) (`pip install
-   markdown`)
- - Optional, required for PDF output: Google Chrome or Chromium
+ - python-venv
+ - [python-markdown](https://python-markdown.github.io/)
+ - [weasyprint](https://doc.courtbouillon.org/weasyprint/stable/#)
 
 ## Usage
 
- 1. Download [resume.py](resume.py), [resume.md](resume.md) and
-    [resume.css](resume.css) (or make a copy of this repository by [using the
-    template](https://github.com/mikepqr/resume.md/generate), forking, or
-    cloning).
-
+ 1. Clone this repository
+ 2. Create a venv with necessary dependencies
+     1. `python -m venv .venv`
+     2. `source .venv/bin/activate`
+     3. `pip install -r requirements.txt`
  2. Edit [resume.md](resume.md) (the placeholder text is taken with thanks from
     the [JSON Resume Project](https://jsonresume.org/themes/))
 
  3. Run `python3 resume.py` to build resume.html and resume.pdf.
 
      - Use `--no-html` or `--no-pdf` to disable HTML or PDF output.
-
-     - Use `--chrome-path=/path/to/chrome` if resume.py cannot find your Chrome
-       or Chromium executable.
 
 ## Customization
 
