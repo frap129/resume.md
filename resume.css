@@ -42,6 +42,9 @@ h4 {
     display: flex;
     justify-content: space-between;
 }
+table {
+    width: 100%;
+}
 p {
     margin: 0 0 0.5em 0;
     padding: 0;

@@ -56,7 +56,7 @@ def make_html(md: str, prefix: str = "resume") -> str:
     return "".join(
         (
             preamble.format(title=title(md), css=css),
-            markdown.markdown(md, extensions=["smarty", "abbr"]),
+            markdown.markdown(md, extensions=["smarty", "abbr", "tables"]),
             postamble,
         )
     )
